@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Форма</title>
+</head>
+
+<body>
+    <h1>Лабораторна робота №1</h1>
+    <h2>Робота з формами</h2>
+    <h2>Виконав студент групи КН-32, Боровіков Денис</h2>
+    <h3>Варіант №3</h3>
+    <a href = "index.html">На головну</a>
+    <h3>Завдання</h3>
+    <p>Необхідно розробити форму для реєстрації учасника художнього форуму. Необхідно заповнити наступні данні:</p>
+    <ul>
+        <li>дані про реєстрацію, включають логін, пароль, електрону адресу, улюбленого художника (обирається зі списку);</li>
+        <li>особисті дані, включають улюблений колір, посилання на веб- сторінку з власним портфоліо, улюблений жанр у живописі (обирається зі списку),докладний опис власних художніх вподобань.</li>
+    </ul>
+    <br>
+    
+    <form>
+        <fieldset>
+            <legend>Реєстрація</legend>
+            <label>Логін
+                <input id="login" type="text">
+            </label>
+            <label>Пароль
+                <input id="urpassword" type="password">
+            </label>
+            <label>Email
+                <input id ="uremail" type ="email">
+            </label>
+            <label>Улюблений художник
+                <select>
+                    <option>Вінсент Ван Гог</option>
+                    <option>Клод Моне</option>
+                    <option>Леонардо да Вінчі</option>
+                    <option>Мікеланджело К.</option>
+                    <option>Пабло Пікассо</option>
+                </select>
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>Особисті дані</legend>
+            <label>Улюблений колір
+                <input id="urcolor" type="color">
+            </label>
+            <label>Посилання на портфоліо
+                <input id ="portfolio" type="url">
+            </label>
+            <label>Улюблений жанр у живописі
+                <select>
+                    <option>історичний</option>
+                    <option>батальний</option>
+                    <option>портрет</option>
+                    <option>пейзаж</option>
+                    <option>побутовий</option>
+                </select>
+            </label>
+            <label>Докладний опис художніх вподобань
+                <textarea rows="5" cols="50"></textarea>
+            </label>
+        </fieldset>
+        <button type="submit">Відправити</button>
+    </form>
+</body>
+</html>
